@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-version="5.0.1"
+version="5.0.1-disk00.0.1"
 
 bash_version="${BASH_VERSION/.*}"
 sys_locale="${LANG:-C}"
@@ -3751,7 +3751,7 @@ make_thumbnail() {
                     -define "jpeg:size=100x100" \
                     -gravity "$crop_offset" \
                     -crop "${size}x${size}+0+0" \
-                    -quality 40 \
+                    -quality 95 \
                     -sample "${width}x${height}" \
                     "${thumbnail_dir}/${image_name}"
             ;;
